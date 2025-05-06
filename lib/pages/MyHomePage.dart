@@ -57,8 +57,9 @@ class _MyhomepageState extends ConsumerState<Myhomepage> {
             ),),
 
         const SizedBox(height: 290,),
+
             Container(
-              // padding: EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               height: 130,
               width: double.infinity,
               decoration: const BoxDecoration(
@@ -66,29 +67,35 @@ class _MyhomepageState extends ConsumerState<Myhomepage> {
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20))
               ),
 
-              child: Row(
+              child: Column(
                 children: [
-                  Expanded(
-                    child: TextField(
-                      style: const TextStyle(color: Colors.white),
-                      decoration: InputDecoration(
-                        hintText: "Ask any things",
-                        hintStyle: TextStyle(
-                          color: Colors.grey[400],
-                          fontWeight: FontWeight.w400,
-                        ),
-                        border: InputBorder.none,
-                        focusedBorder: InputBorder.none,
-                        enabledBorder: InputBorder.none,
+                  Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          style: const TextStyle(color: Colors.white),
+                          decoration: InputDecoration(
+                            hintText: "Ask any things",
+                            hintStyle: TextStyle(
+                              color: Colors.grey[400],
+                              fontWeight: FontWeight.w400,
+                            ),
+                            border: InputBorder.none,
+                            focusedBorder: InputBorder.none,
+                            enabledBorder: InputBorder.none,
 
-                        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                            contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+                          ),
+                        ),
                       ),
-                    ),
+                      const SizedBox(width: 10,),
+                      const Icon(Icons.send, color: Colors.white)
+                    ],
+
                   ),
-                  const SizedBox(width: 10,),
-                  const Icon(Icons.send, color: Colors.white)
                 ],
-              )
+              ),
+
             )
 
           ],
