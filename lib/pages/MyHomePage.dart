@@ -35,33 +35,33 @@ class _MyhomepageState extends ConsumerState<Myhomepage> {
                           fit: BoxFit.contain,
                         ),
                       ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 100, top: 40),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 100, top: 40),
                     child: Text("GuffGaff", style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
                       fontWeight: FontWeight.w500
                     ),),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 100, top: 30),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 100, top: 30),
                     child: Icon(Icons.settings, color: Colors.white, size: 35,)
                   )
                 ],
               ),
-            SizedBox(height: 300,),
+            const SizedBox(height: 300,),
 
-            Text(hello, style: TextStyle(
+            Text(hello, style: const TextStyle(
               color: Colors.white,
               fontSize: 25,
             ),),
 
-        SizedBox(height: 290,),
+        const SizedBox(height: 290,),
             Container(
               // padding: EdgeInsets.symmetric(horizontal: 10),
               height: 130,
               width: double.infinity,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.black26,
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20))
               ),
@@ -70,7 +70,7 @@ class _MyhomepageState extends ConsumerState<Myhomepage> {
                 children: [
                   Expanded(
                     child: TextField(
-                      style: TextStyle(color: Colors.white),
+                      style: const TextStyle(color: Colors.white),
                       decoration: InputDecoration(
                         hintText: "Ask any things",
                         hintStyle: TextStyle(
@@ -81,12 +81,12 @@ class _MyhomepageState extends ConsumerState<Myhomepage> {
                         focusedBorder: InputBorder.none,
                         enabledBorder: InputBorder.none,
 
-                        contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                       ),
                     ),
                   ),
-                  SizedBox(width: 10,),
-                  Icon(Icons.send, color: Colors.white)
+                  const SizedBox(width: 10,),
+                  const Icon(Icons.send, color: Colors.white)
                 ],
               )
             )
