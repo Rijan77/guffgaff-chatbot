@@ -39,7 +39,7 @@ class _MyhomepageState extends ConsumerState<Myhomepage> {
                     padding: EdgeInsets.only(left: 100, top: 40),
                     child: Text("GuffGaff", style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 22,
                       fontWeight: FontWeight.w500
                     ),),
                   ),
