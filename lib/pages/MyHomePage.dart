@@ -95,14 +95,14 @@ class _MyhomepageState extends ConsumerState<Myhomepage> {
                   ),
 
                     const Padding(
-                      padding: EdgeInsets.only(top: 25, left: 15),
+                      padding: EdgeInsets.only(top: 27, left: 15),
                       child: Row(
                         children: [
-                          Icon(Icons.photo, color: Colors.grey, size: 30,),
+                          Icon(Icons.photo, color: Colors.grey, size: 27,),
 
                           SizedBox(width: 15,),
 
-                          Icon(Icons.camera_alt, color: Colors.grey, size: 30,)
+                          Icon(Icons.camera_alt, color: Colors.grey, size: 27,)
                         ],
                       ),
                     ),
