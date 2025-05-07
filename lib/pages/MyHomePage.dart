@@ -102,7 +102,11 @@ class _MyhomepageState extends ConsumerState<Myhomepage> {
 
                           SizedBox(width: 15,),
 
-                          Icon(Icons.camera_alt, color: Colors.grey, size: 27,)
+                          Icon(Icons.camera_alt, color: Colors.grey, size: 27,),
+
+                          SizedBox(width: 15,),
+
+                          Icon(Icons.browser_not_supported, color: Colors.grey, size: 27,)
                         ],
                       ),
                     ),
