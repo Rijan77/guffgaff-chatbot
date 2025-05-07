@@ -94,8 +94,8 @@ class _MyhomepageState extends ConsumerState<Myhomepage> {
 
                   ),
 
-                    Padding(
-                      padding: const EdgeInsets.only(top: 25, left: 15),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 25, left: 15),
                       child: Row(
                         children: [
                           Icon(Icons.photo, color: Colors.grey, size: 30,),
