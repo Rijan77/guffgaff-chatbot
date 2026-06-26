@@ -6,12 +6,9 @@
 
 #include "generated_plugin_registrant.h"
 
-#include <file_selector_windows/file_selector_windows.h>
-#include <url_launcher_windows/url_launcher_windows.h>
+#include <connectivity_plus/connectivity_plus_windows_plugin.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
-  FileSelectorWindowsRegisterWithRegistrar(
-      registry->GetRegistrarForPlugin("FileSelectorWindows"));
-  UrlLauncherWindowsRegisterWithRegistrar(
-      registry->GetRegistrarForPlugin("UrlLauncherWindows"));
+  ConnectivityPlusWindowsPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("ConnectivityPlusWindowsPlugin"));
 }

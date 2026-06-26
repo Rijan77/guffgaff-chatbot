@@ -1,23 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gemini/flutter_gemini.dart';
-import 'package:guffgaff_ai/backend/API.dart';
-import 'package:guffgaff_ai/pages/MyHomePage.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'core/theme.dart';
+import 'presentation/screens/chat_screen.dart';
+import 'providers/theme_provider.dart';
+
 void main() {
-  Gemini.init(apiKey: Gemini_API_Key);
-  runApp(const ProviderScope(child: MyApp()));
+  runApp(const ProviderScope(child: GuffGaffApp()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class GuffGaffApp extends ConsumerWidget {
+  const GuffGaffApp({super.key});
 
-  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
+  Widget build(BuildContext context, WidgetRef ref) {
+    final themeMode = ref.watch(themeModeProvider);
+    return MaterialApp(
+      title: 'GuffGaff AI',
       debugShowCheckedModeBanner: false,
-      home:  Myhomepage(),
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+      themeMode: themeMode,
+      home: const ChatScreen(),
     );
   }
 }

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "1",
+    "question": "What is GuffGaff AI?",
+    "keywords": ["guffgaff", "what is", "about", "who are you", "introduction", "yourself"],
+    "answer": "GuffGaff AI is your intelligent conversational assistant Develop by Rijan. I combine a curated knowledge base with our AI model to give you accurate, helpful answers. I can help with coding, writing, explaining concepts, answering questions, and much more. Just type what you need!",
+    "category": "about"
+  },
+  {
+    "id": "2",
+    "question": "How does GuffGaff AI work?",
+    "keywords": ["how", "work", "technology", "architecture", "pipeline", "system", "process", "hybrid"],
+    "answer": "GuffGaff AI uses a three-stage hybrid pipeline: (1) **Manual override** — curated Q&A entries are checked first; if your question closely matches one, the verified answer is returned instantly. (2) **Context-enhanced Gemini** — relevant knowledge base entries are injected into Gemini's prompt as trusted reference data. (3) **Pure Gemini** — for everything else, Google Gemini answers directly. Each response shows a badge (Manual / AI+Context / AI) so you always know the source.",
+    "category": "about"
+  },
+  {
+    "id": "3",
+    "question": "What can GuffGaff AI help me with?",
+    "keywords": ["capabilities", "features", "help", "tasks", "able", "can you", "what do", "use"],
+    "answer": "GuffGaff AI can help you with: **Coding** — write, debug, and explain code in any language. **Writing** — drafting emails, essays, stories, summaries. **Learning** — explain complex topics simply. **Math & analysis** — solve problems step by step. **Brainstorming** — generate ideas and outlines. **Translation** — convert between languages. **General Q&A** — answer factual questions from its knowledge base and Gemini's training data.",
+    "category": "capabilities"
+  },
+  {
+    "id": "4",
+    "question": "How do I start a new conversation in GuffGaff AI?",
+    "keywords": ["new chat", "new conversation", "start over", "reset", "sidebar", "create chat", "menu"],
+    "answer": "To start a new conversation, tap the **☰ menu icon** in the top-left corner to open the sidebar, then tap **+ New Chat**. Each conversation is saved with its full history. You can rename any conversation by long-pressing it in the sidebar, or delete it with the trash icon. All chats are stored locally on your device.",
+    "category": "usage"
+  },
+  {
+    "id": "5",
+    "question": "Is my conversation data private and secure?",
+    "keywords": ["privacy", "data", "private", "secure", "stored", "safe", "confidential", "personal"],
+    "answer": "Your conversations are stored in a local SQLite database on the server you run GuffGaff AI on — they are not sent to third parties. Messages you send are processed by the Google Gemini API under Google's privacy policy. We recommend avoiding sharing sensitive personal information (passwords, financial details) in any AI chat. The Gemini API key is stored only in your server's `.env` file and is never exposed to clients.",
+    "category": "privacy"
+  },
+
+  {
+    "id": "6",
+    "question": "Who is Rijan?",
+    "keywords": ["Rijan", "Founder", "Rijan Acharya", "rijan", "legend", "safe", "confidential", "personal"],
+    "answer": "Rijan Acharya is the Founder of GuffGaf AI, driven by a passion for innovation and technology. He is known as an inspirational and hardworking individual who believes in turning ideas into reality through dedication, perseverance, and continuous learning. With a vision to create meaningful AI solutions, Rijan is committed to inspiring others, embracing challenges, and building a positive impact through creativity and determination.",
+    "category": "privacy"
+  }
+]

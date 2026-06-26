@@ -1,0 +1,8 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+sqlalchemy>=2.0.27
+aiosqlite>=0.20.0
+python-dotenv>=1.0.1
+google-generativeai>=0.7.2
+sse-starlette>=2.1.0
+pydantic>=2.6.0
